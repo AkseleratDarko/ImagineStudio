@@ -125,7 +125,7 @@ body {
 }
 
 .main {
-    background: url(./image/main.JPG) no-repeat;
+    background: url(./image/main.jpg);
     background-position: -1px 0;
     background-repeat: no-repeat;
     width: 1750px;
