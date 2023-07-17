@@ -32,7 +32,7 @@ ul {
 .block {
     background: url(./image/background.jpg);
     background-repeat: no-repeat;
-    height: 6600px;
+    height: 7600px;
     width: 1900px;
 }
 
@@ -125,7 +125,7 @@ body {
 }
 
 .main {
-    background: url(./image/main.jpg) no-repeat;
+    background: url(./image/main.JPG) no-repeat;
     background-position: -1px 0;
     background-repeat: no-repeat;
     width: 1750px;
@@ -972,79 +972,48 @@ body {
   }
 
 
-
-
-  .cookies-alert {
-    background-color: rgba(0,0,0,0.8);
+  #cookie_note{
+    display: none;
     position: fixed;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 20;
-    transform: translateY(100%);
-    transition: transform 0.2s ease;
-    font-size: 16px;
-  }
-    .is-show {
-      transform: translateY(0);
-      transition: transform 0.2s ease;
-    }
-  
-   .cookies-alert__container {
-      align-items: center;
-      display: flex;
-      grid-template-columns: auto 2fr;
-      grid-gap: 20px;
-      padding: 29px;
-      justify-content: center;
-    }
-  
-    .cookies-alert__left {
-        text-align: center;
-       
-    }
+    bottom: 15px;
+    left: 50%;
+    max-width: 90%;
+    transform: translateX(-50%);
+    padding: 20px;
+    background-color: gray;
+    border-radius: 4px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.8);
+}
 
-  .text-secondary {
-    
-    color: white;
-    font-size: 15px;
-  }
-    p {
-      font-size: 15px;
-        color: white;
-      margin: 0;
-      line-height: 1.5;
-    }
-  
-    .cookies-alert__right {
-      align-items: center;
-      display: flex;
-    }
-  
-    .btn_cookie {
-      margin-left: 15px;
-    }
-  
-  
-  /**
-   * Buttons
-   */
-  .btn_cookie {
+.cookie_note p{
+    margin: 0;
+    font-size: 0.7rem;
+    text-align: left;
+    color: black;
+}
+
+.button-cookie {
     background-color: green;
-    border-radius: 5px;
-    border: transparent;
-    padding: 10px 15px;
-    font-size: 14px;
+    color: white;
+    padding: 10px;
+}
+
+.button-cookie:hover {
     cursor: pointer;
-    transition: background-color .2s ease;
-  }
-   .btn__primary {
-      
-      color: #fff;
+}
+
+.cookie_accept{
+    width:70%;
+}
+@media (min-width: 576px){
+    #cookie_note.show{
+        display: flex;
     }
-  
-    .btn_cookie:hover {
-      background-color: darken(#fff 10%);
-      transition: .2s ease;
+}
+
+@media (max-width: 575px){
+    #cookie_note.show{
+        display: block;
+        text-align: left;
     }
-  
+}
