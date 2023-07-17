@@ -363,7 +363,7 @@ body {
 }
 
 .advantages {
-    background: url(./image/advantages.jpg);
+    
     background-position: -1px -1px;
     background-repeat: no-repeat;  
     width: 1750px;
@@ -794,10 +794,9 @@ body {
 }
 
 .footer-socials {
-    margin-left: 250px;
+    margin-left: 25px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+   
 }
 .socials__link {
     width: 50px; 
@@ -813,16 +812,15 @@ body {
 .telephone {
     text-decoration: none;
     color: white;
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 500;
-    padding-right: 85px;
-    margin-left: 1266px;
+    margin-left: 15px;
 }
 
 .footer-politics {
     font-size: 20px;
     margin-left: 200px;
-    margin-top: 50px    ;
+    margin-top: 110px;   ;
     display: flex;
     
 }
@@ -996,6 +994,7 @@ body {
     background-color: green;
     color: white;
     padding: 10px;
+    font-size: 20px;
 }
 
 .button-cookie:hover {
