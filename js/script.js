@@ -1,3 +1,14 @@
+
+ 
+    const elem = document.querySelector('.gallery-item');
+    const iso = new Isotope( elem, {
+  
+  itemSelector: '.gallery-img',
+  })
+
+
+
+
 let open_modal = document.querySelectorAll('.open_modal');
 let close_modal = document.getElementById('close_modal');
 let modal = document.getElementById('modal');
@@ -26,6 +37,7 @@ var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
     },
+    
     keyboard: true,
     slidesPerView: 4,
   });
