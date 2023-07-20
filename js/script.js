@@ -1,11 +1,20 @@
 
- 
-    const elem = document.querySelector('.gallery-item');
+
+if (document.documentElement.clientWidth > 1200) {
+          const elem = document.querySelector('.gallery-item');
     const iso = new Isotope( elem, {
   
   itemSelector: '.gallery-img',
   })
+}
 
+
+
+
+ 
+    
+
+ 
 
 
 
