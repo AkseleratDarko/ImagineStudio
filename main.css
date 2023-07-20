@@ -1709,7 +1709,7 @@ body {
     .information-info {
         margin-top: 10px;
         font-size: 18px;
-        margin-left: 20px;
+        margin-left: 15px;
     }
     .information-technical {
         font-size: 13px;
@@ -1859,7 +1859,7 @@ body {
         font-size: 7px;
     }
     .group-section__title {
-        padding-top: 5px;
+        padding-top: 15px;
     }
     .group-section__text {
         padding: 2px 5px;
@@ -1868,7 +1868,10 @@ body {
         margin: 0 70px;
     }
     .information-item {
-        width: 47% !important;
+        width: 45% !important;
+    }
+    .information--text {
+        width: 94%;
     }
     .information-item {
         margin: 5px;
@@ -1887,8 +1890,12 @@ body {
 
 }
 
+@media only screen and (max-width: 400px) {
+    .group-section__title {
+        padding-top: 5px;
+    }
+    .information--text {
+        width: 103%;
+    }
 
-
-
-
-
+}
