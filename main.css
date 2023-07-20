@@ -1377,6 +1377,7 @@ body {
     }
     .feedback__link {
         font-size: 12px;
+        padding: 15px;
     }
     .main-title:first-child {
         padding-top: 40px;
@@ -1398,6 +1399,7 @@ body {
     }
     .main-action__link {
         font-size: 12px;
+        padding: 15px;
     }
     .group-title {
         font-size: 30px;
@@ -1829,6 +1831,9 @@ body {
         width: 100%;
         height: 100%;
     }
-  }
+    .footer-politics {
+        font-size: 8px;
+    }
+}
   
   
