@@ -31,7 +31,6 @@ ul {
 
 .block {
     background: url(./image/background.jpg);
-    min-height: 7600px;
     max-width: 1900px;
     background-color: black;
 }
@@ -101,7 +100,7 @@ body {
     
 }
 
-.feedback__link .flare {
+.feedback .flare {
     position: absolute;
     top: 0;
     left: 0;
@@ -127,9 +126,12 @@ body {
     background: url(./image/main.jpg);
     background-position: -1px 0;
     background-repeat: no-repeat;
+    background-size: contain;
     height: 1000px;
-    margin: 0 85px;
+    margin: 0 80px;
+    
     position: relative;
+    width: 100%;
 }
 
 .main-info {
@@ -178,6 +180,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 10px;
     position: relative;
     overflow: hidden;
@@ -288,6 +291,7 @@ body {
 
 .gallery {
     margin: 30px auto;
+    width: 100%;
 }
 
 .gallery-title {
@@ -316,7 +320,7 @@ body {
 
 .gallery-img__size-doulbe {
     overflow: hidden;
-    width: 810px;
+    width: 818px;
     height: 460px;
 }
 
@@ -324,6 +328,14 @@ body {
     overflow: hidden;
     width: 400px;
     height: 900px;
+}
+.gallery-img__size-doulbe-w img {
+    width: 400px;
+    height: 900px;
+}
+
+.gallery-img:nth-child(3) {
+    height: 460px;
 }
 
 
@@ -410,6 +422,7 @@ body {
 .advantages-info__item {
     display: flex; 
     margin: 30px 55px;
+    width: 26%;
 }
 
 
@@ -432,7 +445,7 @@ body {
 }
 
 .advantages-comp {
-    margin-top: 80px auto;
+    margin: 80px auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -490,9 +503,12 @@ body {
     font-weight: bold;
 }
 
+.swiper-wrapper{
+    justify-content: center;
+}
+
 .information-technical {
     margin-top: 15px;
-    margin-right: 150px;
     font-size: 46px;
     font-weight: bold;
     display: flex;
@@ -501,16 +517,11 @@ body {
 
 .information-section {
     margin: 50px auto;
-    
 }
 
 .information-item {
-    margin-left: 40px;
+    margin: 20px;
     min-width: 0;
-}
-
-.information-img {
-    height: 368px;
 }
 
 .information--text {
@@ -565,7 +576,6 @@ body {
     margin-top: 40px;
     min-height: 115px;
     display: flex;
-    
 }
 
 .information-btn {
@@ -614,7 +624,6 @@ body {
 
 .tour {
     margin: 30px auto;
-    
 }
 
 .tour-info {
@@ -652,6 +661,10 @@ body {
     right: 320px;
     margin-top: -82px;
     overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tour-btn:before {
@@ -797,7 +810,6 @@ body {
     margin-left: 200px;
     margin-top: 110px;   ;
     display: flex;
-    
 }
 
 .footer-politics__info a {
@@ -807,8 +819,6 @@ body {
 .footer-politics__text {
     margin-left: 55px;
 }
-
-
 
 .modal {
     display: none;
@@ -995,19 +1005,790 @@ body {
 
 
 
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+    .logo {
+        width: 30%;
+    }
+    .site-menu__link {
+        font-size: 25px;
+    }
+    .feedback { 
+        width: 18%;
+        height: 25%;
+        margin-right: 27px;
+    }
+    .feedback__link {
+        font-size: 18px;
+        padding: 20px 10px;
+    }
+    .site-menu__item { 
+        font-size: 18px;
+        margin: 0 20px;
+        padding: 10px;
+    }
+    .main {
+        width: 80%; 
+        height: 80%;
+        margin: 0 auto;
+    }
+    .main-title {
+        font-size: 50px;
+    }
+    .main-action {
+        width: 25%;
+        margin-top: 20px;
+        bottom: 0;
+        position: relative;
+    }
+    .main-action__link {
+        font-size: 18px;
+    }
+    .gallery-item {
+        justify-content: center;
+    }
+    .gallery-img img {
+        width: 100%;
+        height: 100%;
+    }
+    .gallery-img:nth-child(3) {
+        height: 400px;
+    }
+          
+    .gallery-img__size-doulbe-w{
+        width: 300px;
+        height: 600px;
+        
+    }
+    .gallery-img__size-doulbe {
+        width: 700px;
+        height: 600px;
+    }
+    .gallery-img__size-doulbe img {
+        max-width: 700px;
+    }
+    .advantages-title{
+        font-size: 30px;
+        padding-top: 140px;
+    }
+    .advantages-info__item {
+        width: 35%;
+    }
+    .advantages-comp {
+        margin-top: 30px;
+    }
+    .advantages-comp__counterparties {
+        width: 33%;
+    }
+    .advantages-comp__info {
+        font-size: 16px;
+    }
+    .advantages-comp__logo {
+        margin-left: 167px;
+        margin-top: -83px; 
+        width: 150px;
+        height: 150px;
+    }
+    .information-fr__info {
+        font-size: 20px;
+    }
+    .information-technical {
+        font-size: 30px;
+    }
+    .tour-item  {
+        width: 80%;
+    }
+    .tour-item__video:first-child {
+        width: 83%;
+        height: 850px; 
+        margin: 10px;
+    }
+    .tour-btn {
+        margin-top: 20px;
+        right: 50px;
+    }
+    .address-item{
+        text-align: center;
+        margin: 100px auto;
+    }
+    .address-info{
+        margin-bottom: 20px;
+    }
+    .maps {
+        width: 80%;
+    }
+    .footer-container {
+        font-size: 12px;
+    }
+    .footer-navigation__list {
+        margin: 0 15px;
+    }
+    .telephone{
+        font-size: 28px;
+    }
+    .footer-socials {
+        margin: 0 5px;
+    }
+    .footer-logo {
+        width: 30%;
+        height: 30%;
+    }
+    .footer-politics{
+        font-size: 13px;
+    }
+    .footer-address__list {
+        font-size: 16px;
+    }
+    .footer-navigation__link {
+        font-size: 16px;
+    }
+    }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-    /* */
+    .logo {
+        width: 25%;
+        height: 25%;
+    }
+    .site-menu__item {
+        font-size: 14px;
+        margin: 0 10px;
+        padding: 5px;
+    }
+    .feedback__link {
+        font-size: 14px;
+    }
+    .main {
+        width: 80%;
+        height: 80%;
+    }
+    .main-info {
+        padding-left: 20px;
+    }
+    .main-title:first-child {
+        padding-top: 50px;
+        font-size: 50px;
+    }
+    .main-title{
+        font-size: 40px;
+    }
+    .main-text {
+        padding-top: 50px;
+        font-size: 35px;
+    }
+    .main-action {
+        width: 25%;
+        height: 30%;
+        margin-top: 30px;
+    }
+    .main-action__link {
+        font-size: 14px;
+    }
+    .group-title {
+        font-size: 40px;
+    }
+    .group-info {
+        padding-top: 10px;
+        font-size: 18px;
+    }
+    .group-help {
+        padding-top: 50px;
+        font-size: 20px;
+    }
+    .group-text {
+        padding:0 30px;
+    }
+    .group-section__image{
+        width: 30%;
+        height: 13%;
+    }
+    .group-section__item {
+        width: 30%;
+    }
+    .group-section__title {
+        font-size: 16px;
+    }
+    .group-section__text { 
+        font-size: 14px;
+        padding: 5px;
+    }
+    .group-section__appeal {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .gallery-title {
+        margin-top: 40px;
+        font-size: 50px;
+    }
+    .gallery-img {
+        width: 45%;
+        height: 45%;
+    }
+    .gallery-img:nth-child(3) {
+        height: 375px;
+    }
+    .advantages-btn {
+        width: 20%;
+        height: 5%;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .btn {
+        font-size: 16px;
+    }
+    .advantages-title {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    .advantages-text {
+        font-size: 18px;
+    }
+    
+    .advantages-info__img {
+        width: 90%;
+    }
+    .advantages-info__text {
+        font-size: 18px;
+    }
+    .advantages-comp__img__text {
+        font-size: 18px;
+    }
+    .advantages-comp__img {
+        height: 80%;
+    }
+    .advantages-comp__info { 
+        font-size: 13px;
+    }
+    .advantages-comp__logo {
+        width: 40%;
+        height: 100px;
+        margin-left: 139px;
+    margin-top: -70px;
+    }
+    .information-info {
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 25px;
+    }
+    .information-technical {
+        font-size: 22px;
+    }
+    .swiper-slide img {
+        height: 210px;
+    }
+    .swiper-slide {
+        width: 200px !important;
+    }
+    .information-info__title {
+        font-size: 20px;
+    } 
+    .information-list__text {
+        font-size: 15px;    
+    }
+    .information-inside {
+        font-size: 12px;
+    }
+    .information--text {
+        width: 110%;
+    }
+    .information-btn {
+        width: 35%;
+        height: 55px;
+    }
+    .information-fr__info {
+        font-size: 16px;
+    }
+    .tour-info {
+        margin-left: 100px;
+        font-size: 30px;
+    }
+    .tour-item {
+        width: 90%;
+    }
+    .tour-btn {
+        width: 200px;
+        height: 55px;
+        margin-top: 0px;
+        right: 87px;
+    }
+    .address-item {
+        margin: 50px auto;
+    }
+    .address-info__title {
+        font-size: 25px;
+    }
+    .address-info__text {
+        font-size: 18px;
+    }
+    .address-info__var {
+        font-size: 20px;
+    }
+    .address-info__text {
+        font-size: 16px;
+    }
+    .address-info__time {
+        font-size: 20px;
+    }
+    .maps {
+        width: 95%;
+        height: 80%;
+    }
+    iframe {
+        width: 100%;
+    }
+    .footer-container {
+        margin-top: 0;
+    }
+    .footer-address__list {
+        font-size: 12px;
+    }
+    .footer-navigation__link {
+        font-size: 12px;
+    }
+    .telephone {
+        font-size: 20px;
+    }
+    .socials__link {
+        width: 60%;
+    } 
+    .footer-socials__text {
+        font-size: 16px;
+    }
+    .footer-politics {
+        font-size: 10px;
+        margin-top: 50px;
+    }
+    .tour-item__video {
+        width: 45%;
+    }
   }
   
   /* Small Devices, Tablets */
   @media only screen and (max-width: 768px) {
-    /* */
+    .site-menu__link {
+        font-size: 16px;
+    }
+    .feedback {
+        width: 18%;
+        height: 20%;
+    }
+    .feedback__link {
+        font-size: 12px;
+    }
+    .main-title:first-child {
+        padding-top: 40px;
+        font-size: 25px;
+    }
+    .main-title {
+        font-size: 20px;
+    }
+    .main-text {
+        padding-top: 50px;
+        font-size: 20px;
+    }
+    .main-text-2 {
+        font-size: 18px;
+    }
+    .main-action {
+        margin-left: 40px;
+        margin-top: 95px;
+    }
+    .main-action__link {
+        font-size: 12px;
+    }
+    .group-title {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .group-info {
+        padding-top: 5px;
+        font-size: 16px;
+    }
+    .group-help {
+        padding-top: 30px;
+        font-size: 18px;
+    }
+    .group-section__image {
+        width: 30%;
+        margin: 39px 49px;
+    }
+    .group-section__title {
+        font-size: 14px;
+    }
+    .group-section__text {
+        font-size: 8px;
+        padding: 5px;
+    }
+    .group-section__item {
+        width: 25%;
+        height: 246px;
+    }
+    .group-section__appeal {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .group-section__gratitude {
+        font-size: 16px;
+    }
+    .gallery-title {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    .gallery-img {
+        width: 40%;
+        height: 45%;
+    }
+    .gallery-img:nth-child(3) {
+        height: 255px;
+    }
+    .advantages-hd {
+        margin-left: 10px;
+    }
+    .advantages-btn {
+        width: 20%;
+        height: 5%;
+        margin-top: 16px;
+        margin-right: -100px;
+    }
+    .btn {
+        font-size: 14px;
+    }
+    .advantages-info__item {
+        width: 30%;
+    }
+    .advantages-info__text {
+        font-size: 14px;
+    }
+    .advantages-info__img {
+        width: 60%;
+    }
+    .advantages-info__item {
+        margin: 5px 5px;
+    }
+    .advantages-comp {
+        margin-top: 10px;
+    }
+    .advantages-comp__img {
+        height: 60%;
+    }
+    .advantages-comp__img__text {
+        font-size: 12px;
+    }
+    .advantages-comp__info {
+        font-size: 10px;
+        margin: 10px;
+    }
+    .advantages-comp__logo {
+        width: 35%;
+        height: 61px;
+        margin-left: 107px;
+        margin-top: -57px;
+    }
+    .information-info {
+        margin-top: 10px;
+        font-size: 20px;
+        margin-left: 0;
+    }
+    .information-technical {
+        font-size: 18px;
+    }
+    .information-info__title {
+        font-size: 18px;
+    } 
+    .information-section {
+        margin: 20px auto;
+    }
+    .information-info__title {
+        font-size: 16px;
+    }
+    .information-fr__info {
+        font-size: 12px;
+    }
+    .tour-info {
+        margin-left: 100px;
+        font-size: 25px;
+    }
+    .tour-item {
+        width: 90%;
+    }
+    .tour-item__video {
+        width: 45%;
+    }
+    .tour-item__video:first-child {
+        width: 90%;
+        height: 650px;
+        margin: 10px;
+    }
+    .tour-btn {
+        width: 145px;
+        height: 39px;
+    }
+    .address-info__title {
+        font-size: 20px;
+    }
+    .address-info__text {
+        font-size: 14px;
+    }
+    .address-info {
+        margin-bottom: 16px;
+    }
+    .address-info__var {
+        font-size: 16px;
+    }
+    .address-info__text {
+        font-size: 12px;
+    }
+    .address-info__time {
+        font-size: 16px;
+    }
+    .maps {
+        width: 95%;
+        height: 80%;
+    }
+    .address-item {
+        margin-bottom: 0;
+    }
+    .footer-address__list {
+        font-size: 10px;
+    }
+    .footer-container {
+        font-size: 10px;
+    }
+    .footer-politics {
+        margin-left: 50px;
+    }
+    #cookie_note {
+        margin: auto;
+    }
+    #cookie_note p {
+        font-size: 12px;
+    }
+    .button-cookie {
+        width: 50%;
+        font-size: 14px;
+    }
+    .modal {
+        width: 100%;
+    }
   }
   
   /* Extra Small Devices, Phones */
   @media only screen and (max-width: 480px) {
-    /* */
+    .site-menu__item {
+        font-size: 12px;
+        margin: 0 5px;
+        padding: 5px;
+    }
+    .site-menu__link {
+        font-size: 12px;
+    }
+    .feedback {
+        width: 18%;
+        height: 20%;
+    }
+    .feedback__link {
+        font-size: 10px;
+        padding: 5px;
+        text-align: center;
+    }
+    .main-text {
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    .main-action {
+        width: 28%;
+        height: 35px;
+        margin-left: 40px;
+        margin-top: 15px;
+    }
+    .main-action__link {
+        font-size: 10px;
+    }
+    .group {
+        margin: 25px auto;
+    }
+    .group-title {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .group-info {
+        font-size: 14px;
+    }
+    .group-help {
+        padding-top: 15px;
+        font-size: 14px;
+    }
+    .group-section__image {
+        width: 30%;
+        margin: 30px 41px;
+    }
+    .group-section__title {
+        font-size: 14px;
+    }
+    .group-section__item {
+        width: 26%;
+        height: 200px;
+    }
+    .group-section__appeal {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    .group-section__gratitude {
+        font-size: 12px;
+    }
+    .gallery-title {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .gallery-img:nth-child(3) {
+        height: 145px;
+    }
+    .gallery-img {
+        margin: 5px;
+        height: 145px;
+    }
+    .advantages-title {
+        font-size: 14px;
+        padding-top: 10px;
+    }
+    .advantages {
+        margin: 25px auto;
+    }
+    .advantages-text {
+        font-size: 14px;
+    }
+    .btn {
+        font-size: 10px;
+    }
+    .advantages-btn {
+        width: 20%;
+        height: 3%;
+        margin-top: 16px;
+        margin-right: -100px;
+    }
+    .advantages-hd {
+        margin-right: 125px;
+    }
+    .advantages-info__text {
+        font-size: 10px;
+    }
+    .advantages-comp__img__text {
+        font-size: 10px;
+    }
+    .advantages-comp__info {
+        font-size: 8px;
+    }
+    .advantages-comp__logo {
+        width: 35%;
+        height: 44px;
+        margin-left: 83px;
+        margin-top: -49px;
+    }
+    .information {
+        margin: 15px auto;
+    }
+    .information-info {
+        margin-top: 10px;
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    .information-technical {
+        font-size: 16px;
+        padding-left: 10px;
+    }
+    .information-info__title {
+        font-size: 12px;
+    }
+    .information-list__text {
+        font-size: 10px;
+    }
+    .information-inside {
+        font-size: 10px;
+    }
+    .swiper-slide img {
+        height: 160px;
+    }
+    .information-item {
+        width: 35% !important;
+    }
+    .information-fr {
+        margin-top: 10px;
+        min-height: 40px;
+    }
+    .information-fr__info {
+        font-size: 10px;
+        margin-top: 0;
+    }
+    .information-btn {
+        width: 35%;
+        height: 36px;
+    }
+    .tour {
+        margin-top: 10px;
+    }
+    .tour-info {
+        margin-left: 50px;
+        font-size: 20px;
+    }
+    .tour-item__video {
+        width: 40%;
+    }
+    .tour-btn {
+        width: 107px;
+        height: 30px;
+        right: 36px;
+    }
+    .address-item {
+        margin-top: 30px;
+    }
+    .address-info__title {
+        font-size: 16px;
+    }
+    .address-info__text {
+        font-size: 10px;
+    }
+    .address-info__var {
+        font-size: 12px;
+    }
+    .address-info__time {
+        font-size: 12px;
+    }
+    .maps {
+        width: 95%;
+        height: 80%;
+        margin-top: 15px;
+    }
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+    .footer-address__list {
+        font-size: 8px;
+    }
+    .footer-navigation__link {
+        font-size: 10px;
+    }
+    .footer-navigation__list {
+        margin: 0 5px;
+    }
+    .telephone {
+        font-size: 12px;
+    }
+    .footer-socials__text {
+        font-size: 10px;
+    }
+    .footer-politics {
+        margin-left: 30px;
+    }
+    .socials__link {
+        width: 60%;
+    }
+    #cookie_note p {
+        font-size: 10px;
+    }
+    .button-cookie {
+        width: 50%;
+        font-size: 12px;
+    }
   }
   
   
