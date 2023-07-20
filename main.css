@@ -129,7 +129,6 @@ body {
     background-size: contain;
     height: 1000px;
     margin: 0 80px;
-    
     position: relative;
     width: 100%;
 }
@@ -1146,7 +1145,7 @@ body {
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
     .logo {
-        width: 25%;
+        width: 32%;
         height: 25%;
     }
     .site-menu__item {
@@ -1574,34 +1573,43 @@ body {
   /* Extra Small Devices, Phones */
   @media only screen and (max-width: 480px) {
     .site-menu__item {
-        font-size: 12px;
+        font-size: 9px;
         margin: 0 5px;
         padding: 5px;
     }
     .site-menu__link {
-        font-size: 12px;
+        font-size: 8px;
     }
     .feedback {
         width: 18%;
         height: 20%;
     }
     .feedback__link {
-        font-size: 10px;
+        font-size: 8px;
         padding: 5px;
         text-align: center;
     }
+    .main-title:first-child {
+        font-size: 14px;
+    }
+    .main-title {
+        font-size: 11px;
+    }
     .main-text {
         padding-top: 20px;
-        font-size: 20px;
+        font-size: 10px;
+    }
+    .main-text-2 {
+        font-size: 10px;
     }
     .main-action {
-        width: 28%;
-        height: 35px;
-        margin-left: 40px;
-        margin-top: 15px;
+        width: 24%;
+        height: 27px;
+        margin-left: 19px;
+        margin-top: 57px;
     }
     .main-action__link {
-        font-size: 10px;
+        font-size: 8px;
     }
     .group {
         margin: 25px auto;
@@ -1619,14 +1627,15 @@ body {
     }
     .group-section__image {
         width: 30%;
-        margin: 30px 41px;
+        margin: 34px 45px;
     }
     .group-section__title {
-        font-size: 14px;
+        padding-top: 10px;
+        font-size: 10px;
     }
     .group-section__item {
-        width: 26%;
-        height: 200px;
+        width: 30%;
+        height: 207px;
     }
     .group-section__appeal {
         font-size: 12px;
@@ -1636,8 +1645,8 @@ body {
         font-size: 12px;
     }
     .gallery-title {
-        margin-top: 15px;
         font-size: 20px;
+        margin: 0 50px;
     }
     .gallery-img:nth-child(3) {
         height: 145px;
@@ -1647,14 +1656,14 @@ body {
         height: 145px;
     }
     .advantages-title {
-        font-size: 14px;
+        font-size: 10px;
         padding-top: 10px;
     }
     .advantages {
         margin: 25px auto;
     }
     .advantages-text {
-        font-size: 14px;
+        font-size: 10px;
     }
     .btn {
         font-size: 10px;
@@ -1676,12 +1685,14 @@ body {
     }
     .advantages-comp__info {
         font-size: 8px;
+        text-align: center;
     }
     .advantages-comp__logo {
         width: 35%;
         height: 44px;
-        margin-left: 83px;
+        margin-left: 80px;
         margin-top: -49px;
+        display: none;
     }
     .information {
         margin: 15px auto;
@@ -1771,10 +1782,14 @@ body {
         margin: 0 5px;
     }
     .telephone {
-        font-size: 12px;
+        font-size: 10px;
+    }
+    .footer-logo { 
+        width: 35%;
     }
     .footer-socials__text {
         font-size: 10px;
+        margin-left: 0;
     }
     .footer-politics {
         margin-left: 30px;
@@ -1792,6 +1807,7 @@ body {
     .modal_txt {
         width: 60%;
         height: 30%;
+        margin: 150px auto;
     }
     .price-input {
         width: 100%;
