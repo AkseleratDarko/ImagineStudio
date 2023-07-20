@@ -653,6 +653,9 @@ body {
     overflow: hidden
 }
 
+.tour-item__video img {
+    background-size: contain;
+}
 .tour-btn {
     display: block;
     text-decoration: none;
@@ -1094,13 +1097,15 @@ body {
     .information-technical {
         font-size: 30px;
     }
-    .tour-item  {
-        width: 80%;
-    }
+   
     .tour-item__video:first-child {
-        width: 83%;
-        height: 850px; 
+        width: 100%;
+        height: 640px; 
         margin: 10px;
+    }
+    .tour-item__video img {
+        width: 100%;
+        height: 100%;
     }
     .tour-btn {
         margin-top: 20px;
@@ -1296,13 +1301,16 @@ body {
     .information-fr__info {
         font-size: 16px;
     }
+    .tour-item__video {
+        width: 45%;
+        height: 45%;
+    }
+
     .tour-info {
         margin-left: 100px;
         font-size: 30px;
     }
-    .tour-item {
-        width: 90%;
-    }
+   
     .tour-btn {
         width: 200px;
         height: 55px;
@@ -1355,9 +1363,6 @@ body {
     .footer-politics {
         font-size: 10px;
         margin-top: 50px;
-    }
-    .tour-item__video {
-        width: 45%;
     }
   }
   
@@ -1506,15 +1511,14 @@ body {
         margin-left: 100px;
         font-size: 25px;
     }
-    .tour-item {
-        width: 90%;
-    }
+    
     .tour-item__video {
         width: 45%;
+        height: 40%;
     }
     .tour-item__video:first-child {
-        width: 90%;
-        height: 650px;
+        width: 100%;
+        height: 320px;
         margin: 10px;
     }
     .tour-btn {
@@ -1740,8 +1744,12 @@ body {
         margin-left: 50px;
         font-size: 20px;
     }
+    .tour-item {
+        margin-right: 0;
+    }
     .tour-item__video {
         width: 40%;
+        height: 161px;
     }
     .tour-btn {
         width: 107px;
