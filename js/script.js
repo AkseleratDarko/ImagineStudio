@@ -50,3 +50,15 @@ var swiper = new Swiper(".mySwiper", {
     keyboard: true,
     slidesPerView: 4,
   });
+
+$(".modal_txt").on("submit", function(){
+	$.ajax({
+		url: '/mail.php',
+		method: 'post',
+		dataType: 'html',
+		data: $(this).serialize(),
+		success: function(data){
+			$('#modal-thanks').css('display','block');
+		}
+	});
+});
