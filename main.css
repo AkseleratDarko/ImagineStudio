@@ -344,7 +344,9 @@ body {
     height: 460px;
 }
 
-
+.gallery-img img {
+    object-fit: cover;
+}
 
 .advantages {
     
@@ -659,6 +661,7 @@ body {
 
 .tour-item__video img {
     background-size: contain;
+        object-fit: cover;
 }
 .tour-btn {
     display: block;
@@ -1117,15 +1120,21 @@ body {
         justify-content: center;
     }
     .gallery-img {
-        width: 45%;
-        height: 45%;
+        margin: 5px;
+        height: 370px;
+    }
+    .gallery-img__size-doulb {
+        width: 33%;
+    }
+    .gallery-img {
+        width: 40%;
     }
     .gallery-img img {
         width: 100%;
         height: 100%;
     }
     .gallery-img:nth-child(3) {
-        height: 555px;
+        height: 370px;
     }
     .advantages-title {
         padding-top: 20px;
@@ -1150,6 +1159,17 @@ body {
     }
     .advantages-info__text {
         font-size: 22px;
+    }
+    .tour-item {
+        display: flex;
+        padding: 15px;
+        flex-wrap: wrap-reverse;
+        margin-right: 60px;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .tour-item__video {
+        height: 555px;
     }
     .tour-item__video:first-child {
         width: 100%;
@@ -1243,23 +1263,13 @@ body {
     }
     .gallery-item {
         justify-content: center;
+        
     }
-    .gallery-img img {
-        width: 100%;
-        height: 100%;
+    .gallery-img {
+        height: 448px;
     }
     .gallery-img:nth-child(3) {
         height: 448px;
-    }
-          
-    .gallery-img__size-doulbe-w{
-        width: 300px;
-        height: 600px;
-        
-    }
-    .gallery-img__size-doulbe {
-        width: 700px;
-        height: 600px;
     }
     .gallery-img__size-doulbe img {
         max-width: 700px;
@@ -1292,7 +1302,10 @@ body {
     .information-technical {
         font-size: 30px;
     }
-   
+    .tour-item__video {
+        height: 450px;
+    }
+
     .tour-item__video:first-child {
         width: 100%;
         height: 640px; 
@@ -1419,8 +1432,7 @@ body {
         font-size: 50px;
     }
     .gallery-img {
-        width: 45%;
-        height: 45%;
+       height: 378px;
     }
     .gallery-img:nth-child(3) {
         height: 375px;
@@ -1635,8 +1647,7 @@ body {
         font-size: 25px;
     }
     .gallery-img {
-        width: 40%;
-        height: 45%;
+       height: 255px;
     }
     .gallery-img:nth-child(3) {
         height: 255px;
