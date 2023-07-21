@@ -1,6 +1,6 @@
 
 
-if (document.documentElement.clientWidth > 1200) {
+if (document.documentElement.clientWidth > 1400) {
           const elem = document.querySelector('.gallery-item');
     const iso = new Isotope( elem, {
   
