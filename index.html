@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Imagine Studio</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./@fancyapps/ui/dist/fancybox/fancybox.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>          
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
@@ -146,15 +147,14 @@
         <div class="gallery-title">
             <div class="">Галерея</div>
         </div>
-        <div class="gallery-item">
-            <div class="gallery-img gallery-img__size-doulbe-w"><img src="./image/3.png" alt=""></div>
-            <div class="gallery-img gallery-img__size-doulbe"><img src="./image/2.png" alt=""></div>
-            <div class="gallery-img"><img src="./image/1.png" alt=""></div>
-            <div class="gallery-img"><img src="./image/4.png" alt=""></div>
-            <div class="gallery-img"><img src="./image/5.png" alt=""></div>
-            <div class="gallery-img"><img src="./image/6.png" alt=""></div>
-
-        </div>
+        <div class="gallery-item ">
+            <a data-fancybox="gallery" href="./image/3big.jpg"  class="gallery-img gallery-img__size-doulbe-w"><img src="./image/3.png" alt=""></a>
+            <a data-fancybox="gallery" href="./image/2big.jpg"  class="gallery-img gallery-img__size-doulbe"><img src="./image/2.png" alt=""></da>
+            <a data-fancybox="gallery" href="./image/1big.jpg" class="gallery-img"><img src="./image/1.png" alt=""></a>
+            <a data-fancybox="gallery" href="./image/4big.jpg" class="gallery-img"><img src="./image/4.png" alt=""></a>
+            <a data-fancybox="gallery" href="./image/5big.jpg" class="gallery-img"><img src="./image/5.png" alt=""></a>
+            <a data-fancybox="gallery" href="./image/6big.jpg" class="gallery-img"><img src="./image/6.png" alt=""></a>
+         </div>
     </section>
     <section class="advantages">
         <div class="advantages-hd">
@@ -368,21 +368,21 @@
     <section id="tour" class="tour">
         <div class="tour-info">3D тур по помещениям</div>
         <div class="tour-item">
-            <div class="tour-item__video">
+            <a data-fancybox="tour" href="./image/3d/1big.jpg"  class="tour-item__video">
                 <img src="./image/3d/1.png" alt="">
-            </div>
-            <div class="tour-item__video">
+            </a>
+            <a data-fancybox="tour" href="./image/3d/2big.jpg"  class="tour-item__video">
                 <img src="./image/3d/2.png" alt="">
-            </div>
-            <div class="tour-item__video">
+            </a>
+            <a data-fancybox="tour" href="./image/3d/3big.jpg"  class="tour-item__video">
                 <img src="./image/3d/3.png" alt="">
-            </div>
-            <div class="tour-item__video">
+            </a>
+            <a data-fancybox="tour" href="./image/3d/4big.jpg" class="tour-item__video">
                 <img src="./image/3d/4.png" alt="">
-            </div>
-            <div class="tour-item__video">
+            </a>
+            <a data-fancybox="tour" href="./image/3d/5big.jpg" class="tour-item__video">
                 <img src="./image/3d/5.png" alt="">
-            </div>
+            </a>
         </div>
         <a href="#open" class="tour-btn  btn open_modal">
             <div class="open_modal" href="#open">Оставить заявку <span class="flare"></span></div>
@@ -518,13 +518,12 @@
 
 </div>
 
-    
-
 
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <script src="./js/cookies.js"></script>
 <script src="./js/script.js"></script>
-
-
+<script type="module" src="./js/img.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 </body>
 </html>
