@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@fancyapps/ui": "^5.0.20"
+  },
+  "name": "imaginestudio",
+  "version": "1.0.0",
+  "main": "./js/script.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
+  
+}
