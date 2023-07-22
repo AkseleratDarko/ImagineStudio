@@ -3,6 +3,8 @@ html, body {
     scroll-behavior: smooth;
 }
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -316,7 +318,7 @@ body {
     margin: 15px; 
     border: 2px solid #ffffff;
     width: 385px;
-    height: 400px;
+    height: 380px;
 }
 
 .gallery-img__size-doulbe {
@@ -328,7 +330,7 @@ body {
 .gallery-img__size-doulbe-w {
     overflow: hidden;
     width: 400px;
-    height: 900px;
+    height: 876px;
 }
 .gallery-img__size-doulbe-w img {
     width: 400px;
