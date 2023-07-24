@@ -174,6 +174,7 @@ body {
     text-decoration: none;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .main-action__link {
@@ -277,6 +278,7 @@ body {
     text-align: center;
     font-size: 16px;
     padding: 20px 20px;
+    line-height: 1;
 }
 
 .group-section__appeal {
@@ -308,9 +310,8 @@ body {
 
 .gallery-item {
     display: flex;  
-    
     flex-wrap: wrap;
-    margin: 0 50px;
+    margin: 0 90px;
 }
 
 .gallery-img {
@@ -323,24 +324,19 @@ body {
 
 .gallery-img__size-doulbe {
     overflow: hidden;
-    width: 818px;
+    width: 800px;
     height: 460px;
 }
 
 .gallery-img__size-doulbe-w {
     overflow: hidden;
-    width: 400px;
-    height: 876px;
+    width: 385px;
+    height: 874px;
 }
 .gallery-img__size-doulbe-w img {
     width: 400px;
     height: 900px;
 }
-
-.gallery-img:nth-child(3) {
-    height: 460px;
-}
-
 
 .gallery-img:nth-child(3) {
     height: 460px;
@@ -708,7 +704,7 @@ body {
 }
 .address-item {
     margin-left: 80px;
-    margin-top: 90px;
+    margin-top: 40px;
     
 }
 
@@ -876,7 +872,7 @@ body {
     background: #FFF;
     padding: 60px;
     margin: 300px auto;
-    max-width: 501px;
+    max-width: 600px;
     max-height: 800px;
     display: flex;
     flex-direction: column;
@@ -922,8 +918,7 @@ body {
     padding: 20px;
     width: 500px;
     height: 90px;
-    background: #030305;
-    border: 0;
+    border: 2px solid black;
     margin-top: 18px;
     box-sizing: border-box;
     text-align: center;
@@ -931,13 +926,14 @@ body {
     font-size: 23px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: black;
     transition: background-color .5s;
     
 }
 
 .button:hover {
-    background-color: gray;
+    background-color: black;
+    color: white;
     cursor: pointer;
 }
 
@@ -1120,6 +1116,7 @@ body {
     }
     .gallery-item {
         justify-content: center;
+        margin: 0 auto;
     }
     .gallery-img {
         margin: 5px;
@@ -1823,7 +1820,7 @@ body {
         margin-top: 57px;
     }
     .main-action__link {
-        font-size: 8px;
+        font-size: 7px;
         padding: 7px;
     }
     .group {
@@ -1881,7 +1878,7 @@ body {
         font-size: 10px;
     }
     .btn {
-        font-size: 10px;
+        font-size: 7px;
     }
     .advantages-btn {
         width: 20%;
